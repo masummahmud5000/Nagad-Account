@@ -1,9 +1,15 @@
 import Image from "next/image";
+import loading from '@/public/loading.png'
+import { redirect } from "next/navigation";
 
 export default function Home() {
+  setTimeout(() => redirect('/home'),2500)
   return (
-    <main>
-      hello world
+    <main className="pt-50">
+      <div className="flex flex-col gap-15 items-center">
+        <span className="p-3 bg-linear-to-t from-amber-400 to-white rounded-full animate-[spin_1s_infinite]"><Image src={loading} height={100} width={100} alt="Loading" className="animate-spin bg-white p-2 rounded-full"/></span>
+        <h1 className="bg-linear-to-r from-red-500 to-green-500 py-2 bg-clip-text text-transparent text-3xl font-mono font-bold">Nagad System Run...</h1>
+      </div>
     </main> 
   )
 }
