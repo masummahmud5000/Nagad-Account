@@ -1,0 +1,14 @@
+{
+    "name": "নগদ",
+    "short_name": "Nagad",
+    "description": "Banking Application",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#ffffff",
+    "icons": [{
+        "src": "/nagad-logo.png",
+        "sizes": "192x192",
+        "type": "image/png"
+    }]
+}
