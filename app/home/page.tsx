@@ -8,6 +8,7 @@ import logoMain from '@/public/nagad-logo.png'
 import sendMoney from '@/public/sendMoney-logo.png'
 import cashOut from '@/public/cashOut-logo.png'
 import recharge from '@/public/mobileRecharge-logo.png'
+import Balance from "../_clientComponents/balance";
 //////////////////////////////
 const NestedHome = () => {
     return(
@@ -23,17 +24,12 @@ const NestedHome = () => {
                 </div>
                 <p className="text-center text-white text-[13px] mt-0.5">ডাক বিভাগের ডিজিটাল লেনদেন</p>
                 {/* ///////////////////////////////////////////////////// */}
-                <div className="flex items-center justify-center mt-7 z-10">
-                    <span className="flex bg-white py-0.5 px-3 gap-3 rounded-3xl">
-                        <Image src={logoMain} alt="MainLogo" width={20} height={20}/>
-                        <h1 className="font-bold text-[#f55134]">Tap for Balance</h1>
-                    </span>
-                </div>
+                <Balance/>
                 {/* ///////////////////////////////////////////////////// */}
             </div>
             <div className="bg-gray-200 flex items-center pr-2">
                 <span className="fa fa-alarm-clock bg-green-600 py-2 pl-2 pr-7 text-white rounded-r-2xl"/>
-                <Marquee className="text-green-700 font-bold">Masum Mahmud</Marquee>
+                <Marquee speed={50} className="text-green-700 font-bold">Masum Mahmud</Marquee>
             </div>
                 <p className="font-bold text-md mt-1 ml-3 text-gray-500">Services</p>
             {/* ///////////////////////////////////////////////////// */}
