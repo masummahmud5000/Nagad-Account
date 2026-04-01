@@ -9,9 +9,18 @@ export default function Home() {
   let router = useRouter();
 
   useEffect (() => {
-    const timer = setTimeout(() => router.push('/home'),3000)
-    return () => clearTimeout(timer)
+    try{
+      const balance = localStorage?.getItem('balance')
+      if (!balance){
+        localStorage.setItem('balance', "0.00")
+      }
+      return
+    }finally{
+      const timer = setTimeout(() => router.push('/home'),3000)
+      return () => clearTimeout(timer)
+    }    
   },[])
+
   return (
     <main className="pt-50">
       <div className="flex flex-col gap-15 items-center">
