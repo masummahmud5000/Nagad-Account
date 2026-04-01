@@ -3,7 +3,7 @@ import '@/app/globals.css'
 import Marquee from 'react-fast-marquee'
 ///////////////////////////////
 import logo from '@/public/nagad-logo-white.png'
-import logoMain from '@/public/nagad-logo.png'
+// import logoMain from '@/public/nagad-logo.png'
 
 import sendMoney from '@/public/sendMoney-logo.png'
 import cashOut from '@/public/cashOut-logo.png'
