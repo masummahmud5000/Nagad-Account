@@ -33,7 +33,7 @@ const NestedHome = () => {
             </div>
                 <p className="font-bold text-md mt-1 ml-3 text-gray-500">Services</p>
             {/* ///////////////////////////////////////////////////// */}
-            <div className="grid grid-cols-3 gap-3 py-4 px-7">
+            <div className="grid grid-cols-3 py-4 px-7">
                 <div className="text-center">
                     <div className="readyBG">
                         <Image src={sendMoney} alt="Send Money" width={60}/>
