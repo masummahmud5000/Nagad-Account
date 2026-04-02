@@ -37,7 +37,7 @@ export default function Balance(){
 
     return(
         <main className="flex w-full gap-1 mt-8 z-10">
-            <div className='ml-4 flex w-fill gap-2 items-center bg-white py-0.5 px-3 rounded-2xl'>
+            <div className='ml-4 flex w-fill gap-2 items-center bg-white border-2 border-gray-400 py-0.5 px-3 rounded-2xl'>
 
                 <Image onClick={balanceShowHandle} src={money} loading='eager' alt="MainLogo" height={20} className='w-auto h-auto'/>
 
