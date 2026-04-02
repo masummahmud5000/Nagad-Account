@@ -3,7 +3,7 @@ import '@/app/globals.css'
 import Marquee from 'react-fast-marquee'
 import Link from "next/link";
 ///////////////////////////////
-import logo from '@/public/nagad-logo-white.png'
+import logo from '@/public/nagad-white.png'
 import addMoneyLogo from '@/public/addMoney.png'
 import remove from '@/public/delete.png'
 import sendMoney from '@/public/sendMoney-logo.png'
@@ -22,7 +22,7 @@ import limit from '@/public/limit.png'
 //////////////////////////////
 const NestedHome = () => {
     return(
-        <main>
+        <main className="pb-20">
             <div className="relative py-3 h-38 bg-linear-to-t from-[#f55134] to-[#fb693a] overflow-hidden">
                 <div className="absolute right-[-10%] bottom-[-50%] opacity-13 z-1">
                     <Image src={logo} width={250} height={250} alt="Nagad" className="object-contain invert brightness-0"/>
@@ -46,7 +46,7 @@ const NestedHome = () => {
                 </Marquee>
             </div>
                 <p className="font-bold text-md mt-1 ml-3 text-gray-500">Services</p>
-            {/* ///////////////////////////////////////////////////// */}
+{/* ///////////////////////////////////////////////////// */}
             <div className="grid grid-cols-3 gap-5 py-4 px-7">
 
                 <div className="text-center">

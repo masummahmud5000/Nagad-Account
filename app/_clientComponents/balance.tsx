@@ -1,7 +1,7 @@
 'use client'
 /////////////////////////////////
 import Image from 'next/image'
-import logoMain from '@/public/nagad-logo.png'
+import money from '@/public/money.png'
 import { useState,useEffect } from 'react'
 import { usePage } from './context/contextAPI'
 /////////////////////////////////
@@ -30,16 +30,19 @@ export default function Balance(){
     const balanceShowHandle = () => {
         try{
             setShowBalance(true)
-            setTimeout(() => setShowBalance(false),4500)
+            setTimeout(() => setShowBalance(false),6000)
         }finally{
         }
     }
 
     return(
-        <main className="flex items-center gap-1 justify-center mt-7 z-10">
-            <Image src={logoMain} loading='eager' alt="MainLogo" height={28} className='bg-white border-2 rounded-full border-gray-300 p-0.5'/>
+        <main className="flex w-full gap-1 mt-8 z-10">
+            <div className='ml-4 flex w-fill gap-2 items-center bg-white py-0.5 px-3 rounded-2xl'>
 
-            <h1 onClick={balanceShowHandle} className="font-bold select-none text-[#f55134] bg-white px-2 rounded-2xl cursor-pointer border border-gray-300">{showBalance ? `${balance} Tk.` : 'Tap for Balance'}</h1>
+                <Image onClick={balanceShowHandle} src={money} loading='eager' alt="MainLogo" height={20} className='w-auto h-auto'/>
+
+                <h1 onClick={balanceShowHandle} className="text-end font-bold text-lg select-none text-[#f55134] rounded-2xl">{showBalance ? `${balance} Tk.` : 'Tap for Balance'}</h1>
+            </div>
         </main>
     )
 }

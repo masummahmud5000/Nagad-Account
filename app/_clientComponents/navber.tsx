@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import Image from "next/image"
-import logo from '@/public/nagad-logo-white.png'
+import logo from '@/public/nagad-white.png'
 import {useEffect, useState } from "react"
 import { usePage } from "./context/contextAPI"
 
