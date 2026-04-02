@@ -18,7 +18,7 @@ export default function Balance(){
         let tk = localStorage?.getItem('balance')
         if (tk){
             let result = Number(tk)
-            let final = tk.toLocaleString(undefined, {
+            let final = result.toLocaleString(undefined, {
                 minimumFractionDigits: 2,
                 maximumFractionDigits: 2
             })
