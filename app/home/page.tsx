@@ -55,14 +55,7 @@ const NestedHome = () => {
                     </Link>
                     <h5 className="text-sm text-gray-600 font-semibold">Add Money</h5>
                 </div>
-
-                <div className="text-center">
-                    <Link href='/home' className="readyBG">
-                        <Image src={remove} alt="Send Money" width={50} className="opacity-90"/>
-                    </Link>
-                    <h5 className="text-sm text-gray-600 font-semibold">Remove Tk</h5>
-                </div>
-
+                
                 <div className="text-center">
                     <Link href='/home' className="readyBG">
                         <Image src={sendMoney} alt="Send Money" width={50}/>
@@ -75,13 +68,6 @@ const NestedHome = () => {
                         <Image src={cashOut} alt="Send Money" width={50}/>
                     </div>
                     <h5 className="text-sm text-gray-600 font-semibold">Cash Out</h5>
-                </div>
-
-                <div className="text-center">
-                    <div className="readyBG">
-                        <Image src={recharge} alt="Send Money" width={50}/>
-                    </div>
-                    <h5 className="text-sm text-gray-600 font-semibold">Recharge</h5>
                 </div>
             </div>
 {/* //////////////////////////////////////////////////////////////////////////////////////////////////// */}
