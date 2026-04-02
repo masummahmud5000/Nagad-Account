@@ -18,8 +18,11 @@ export default function Balance(){
         let tk = localStorage?.getItem('balance')
         if (tk){
             let result = Number(tk)
-            let convert = result.toFixed(2).toLocaleString();
-            return setBalance(convert.toString())
+            let final = tk.toLocaleString(undefined, {
+                minimumFractionDigits: 2,
+                maximumFractionDigits: 2
+            })
+            return setBalance(final.toString())
         }else{
             localStorage.setItem('balance','0')
             window.location.reload()
