@@ -12,7 +12,7 @@ export default function Home() {
     try{
       const balance = localStorage?.getItem('balance')
       if (!balance){
-        localStorage.setItem('balance', "0.00")
+        localStorage.setItem('balance', "0")
       }
       return
     }finally{

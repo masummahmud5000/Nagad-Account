@@ -3,3 +3,6 @@
 .readyBG {
     @apply bg-linear-to-t from-[#f55134] to-[#fb693a] text-white inline-block py-2 px-2.5 rounded-2xl cursor-pointer hover:py-2.5 hover:px-3 transition-all duration-200
 }
+.readyBG2 {
+    @apply bg-linear-to-t from-green-300 to-blue-300 text-white inline-block py-2 px-2.5 rounded-2xl cursor-pointer hover:py-2.5 hover:px-3 transition-all duration-200
+}
