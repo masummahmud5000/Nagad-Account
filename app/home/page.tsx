@@ -48,13 +48,6 @@ const NestedHome = () => {
                 <p className="font-bold text-md mt-1 ml-3 text-gray-500">Services</p>
 {/* ///////////////////////////////////////////////////// */}
             <div className="grid grid-cols-3 gap-5 py-4 px-7">
-
-                <div className="text-center">
-                    <Link href='/home/addMoney' className="readyBG">
-                        <Image src={addMoneyLogo} alt="Add Money" width={50}/>
-                    </Link>
-                    <h5 className="text-sm text-gray-600 font-semibold">Add Money</h5>
-                </div>
                 
                 <div className="text-center">
                     <Link href='/home' className="readyBG">
@@ -69,6 +62,14 @@ const NestedHome = () => {
                     </div>
                     <h5 className="text-sm text-gray-600 font-semibold">Cash Out</h5>
                 </div>
+
+                <div className="text-center">
+                    <Link href='/home/addMoney' className="readyBG">
+                        <Image src={addMoneyLogo} alt="Add Money" width={50}/>
+                    </Link>
+                    <h5 className="text-sm text-gray-600 font-semibold">Add Money</h5>
+                </div>
+                
             </div>
 {/* //////////////////////////////////////////////////////////////////////////////////////////////////// */}
             <p className="font-bold text-md mt-1 ml-3 text-gray-500">Payments</p>
