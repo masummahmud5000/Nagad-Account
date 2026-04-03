@@ -18,7 +18,7 @@ export default function Balance(){
         let tk = localStorage?.getItem('balance')
         if (tk){
             let result = Number(tk)
-            let final = result.toLocaleString('en-IN')
+            let final = result.toLocaleString('en-US')
             return setBalance(final.toString())
         }else{
             localStorage.setItem('balance','0')
