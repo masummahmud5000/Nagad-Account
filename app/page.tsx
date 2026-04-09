@@ -10,6 +10,7 @@ export default function Home() {
 
   useEffect (() => {
     try{
+      
       const balance = localStorage?.getItem('balance')
       if (!balance){
         localStorage.setItem('balance', "0")

@@ -9,7 +9,7 @@ import remove from '@/public/delete.png'
 import sendMoney from '@/public/sendMoney-logo.png'
 import cashOut from '@/public/cashOut-logo.png'
 import recharge from '@/public/mobileRecharge-logo.png'
-import Balance from "../_clientComponents/balance"
+import Balance from '@/app/_clientComponents/balance'
 //////////////////////////////
 import merchant from '@/public/merchan.png'
 import bill from '@/public/bill.png'
@@ -20,7 +20,9 @@ import zakat from '@/public/zakat.png'
 import donation from '@/public/donation.png'
 import limit from '@/public/limit.png'
 //////////////////////////////
+
 const NestedHome = () => {
+
     return(
         <main className="pb-20">
             <div className="relative py-3 h-38 bg-linear-to-t from-[#f55134] to-[#fb693a] overflow-hidden">
